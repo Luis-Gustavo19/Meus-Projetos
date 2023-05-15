@@ -1,0 +1,3 @@
+#n deu certo.....
+import emoji
+print(emoji.emojize("ola,mundo: earth_americas",use_aliases = True))
