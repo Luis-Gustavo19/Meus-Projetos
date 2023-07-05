@@ -4,7 +4,6 @@
 lista = []
 contmaior = 0
 contmenor = 0
-#difícil p k7 ,mas eu fiz na doida e deu certo
 for add in range(0,5):
      lista.append(int(input(f'Digite um valor para a posição {add}: ')))
 pos = p =0
