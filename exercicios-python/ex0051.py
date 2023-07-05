@@ -1,6 +1,5 @@
 '''Exercício Python 51: Desenvolva um programa que leia o primeiro termo e a razão de uma PA.
  No final, mostre os 10 primeiros termos dessa progressão'''
-#exercício difícil náo me dei muito bem 
 pri = int(input("Digite o primeiro termo da PA: ".strip()))
 r = int(input("Digite a razão dessa PA: ".strip()))
 
