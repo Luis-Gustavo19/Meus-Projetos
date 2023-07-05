@@ -1,9 +1,4 @@
 
-#Luis Gustavo- 20221113317
-#Higor Andrade- 20212110266
-#Vinicius Magalhães - 20221115148
-#Pycharm-python-
-#Prof-Sandro Mesquita
 #Levaremos em consideração apenas 02 parâmetros para efeito de decisão do sistema, são eles:
 #- A quantidade de andar que o elevador deverá passar para atender o morador
 #- A quantidade de pessoas dentro do elevado
