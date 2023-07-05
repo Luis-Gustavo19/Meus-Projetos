@@ -2,4 +2,3 @@
 numero = str(input('Qual seu número de 0 a 9999: '))
 print('UNIDADE {}'.format(numero[4]))
 
-#GUANABARA RESPONDEU,MAS EU NÃO ENTENDI NADAAAAA
