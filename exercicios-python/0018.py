@@ -6,4 +6,3 @@ seno = math.sin(convpradi)
 cos = math.cos(convpradi)
 tang = math.tan(convpradi)
 print("O ângulo {}º tem o seno {:.2f} ,cosseno {:.2f} e a tangente {:.2f} ".format(angulo,seno,cos,tang))
-#melhor do mundo, siiiiiiiiiii.RECEBAAAAA! É OO CARA DA LUVA DE PEDREIROOOOO.
