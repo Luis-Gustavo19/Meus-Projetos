@@ -1,6 +1,6 @@
 '''Exercício Python 086: Crie um programa que declare uma matriz de dimensão 3×3 e preencha com valores lidos pelo teclado.
  No final, mostre a matriz na tela, com a formatação correta.'''
-#ficou meio merda o print da matriz
+
 matriz=[]
 num =[]
 a =1
@@ -49,7 +49,6 @@ maiorvalor.append(w)
 e =matriz[5][0]
 maiorvalor.append(e)
 print(f'O maior valor da segunda linha é {max(maiorvalor)}')
-#fiz isso aqui totalmente na preguiça e mal feito kkkk
 
 
 
