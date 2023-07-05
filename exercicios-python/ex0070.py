@@ -3,7 +3,6 @@
 A) qual é o total gasto na compra.
 B) quantos produtos custam mais de R$1000.
 C) qual é o nome do produto mais barato.'''
-#achei difícil, mas fiz uma gambiarra e deu certo. Porém fui ver o exemplo do guanabara e ficpu melhor.
 cont = 0
 menva = 0
 pmil = 0
