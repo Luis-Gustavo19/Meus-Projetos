@@ -4,7 +4,6 @@ o seu preço normal e condição de pagamento:
 – à vista no cartão: 5% de desconto
 – em até 2x no cartão: preço formal
 – 3x ou mais no cartão: 20% de juros'''
-#meio bugado kkk melhor refazer
 print("=======LOJAS GUSTAVO========")
 compras = float(input(('Qual o valor das compras R$: ')))
 print('''[1]- À vista dinheiro/cheque.
