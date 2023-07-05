@@ -6,4 +6,3 @@ pygame.mixer.music.play()
 input()
 pygame.event.wait()
 
-#não deu certo de primeira pq o comando mudou com o tempo,maas vi nos comentárosma expçicacção e agr prestou.
