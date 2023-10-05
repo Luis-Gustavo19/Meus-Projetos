@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Contar</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1 id="titulo_pricipal">VAMOS CONTAR</h1>
+
+    <section class="secao_contagem">
+        <label id="label_1">Inicio:</label>
+
+        <input  id="inicio"type="number" min="0"><br><br>
+
+        <label id="label_2">Fim:</label>
+
+        <input  id="fim" type="number" min="0"><br><br>
+        <label id="label_3">Passo:</label>
+
+        <input id="passo" type="number" min="0"><br><br>
+
+        <button id="botao_contar" onclick="cliquei()">Contar</button><br><br>
+        <hr>
+
+        <div id="resposta"></div>
+    </section>
+    
+    <script>
+        function cliquei(){
+            /*Não pode deixar caixa vazia, Nãp pode ser passo zero*/
+            var inicio= Number(window.document.getElementById('inicio').value)
+            var fim = Number(window.document.getElementById('fim').value)
+            var passo = Number(window.document.getElementById('passo').value)
+            var resposta = window.document.getElementById('resposta')
+            var passozero= false
+            resposta.innerHTML=''
+            if (passo ==0){
+                alert('Não é possível ter um passo 0')
+                passozero=true
+            }
+            /*Logica de Implementação*/
+            if (passozero ==false){
+                if (inicio < fim){
+                if (passo < 0){ passo = Math.abs(passo)}
+                for (inicio;inicio <= fim; inicio+=passo){
+                    var paragrafo = document.createElement("p")
+                    paragrafo.textContent = inicio
+                    if(inicio %2==0){
+                        paragrafo.style= "white-space: nowrap; display: inline-block; margin-right: 10px; color: red; font-weight: bold;";}else paragrafo.style= "white-space: nowrap; display: inline-block; margin-right: 10px; color: blue; font-weight: bold;";
+                    resposta.appendChild(paragrafo)
+                }
+            }
+            else if (inicio > fim && passo>0){
+                for (inicio; inicio>= fim; inicio-=passo){
+                    var paragrafo = document.createElement("p")
+                    paragrafo.textContent = inicio
+                    if(inicio %2==0){
+                        paragrafo.style= "white-space: nowrap; display: inline-block; margin-right: 10px; color: red; font-weight: bold;";}else paragrafo.style= "white-space: nowrap; display: inline-block; margin-right: 10px; color: blue; font-weight: bold;";
+                    resposta.appendChild(paragrafo)
+                }
+            }
+
+            else for (inicio; inicio>= fim; inicio-= Math.abs(passo)){
+                var paragrafo = document.createElement("p")
+                    paragrafo.textContent = inicio
+                    if(inicio %2==0){
+                        paragrafo.style= "white-space: nowrap; display: inline-block; margin-right: 10px; color: red; font-weight: bold;";}else paragrafo.style= "white-space: nowrap; display: inline-block; margin-right: 10px; color: blue; font-weight: bold;";
+                    resposta.appendChild(paragrafo)}
+        }
+        }
+
+
+    </script>
+</body>
+</html>

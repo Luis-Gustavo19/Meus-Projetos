@@ -1,0 +1,98 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+    background: radial-gradient(circle, #000000, #494948);
+}
+h1#titulo {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3em;
+    position: relative;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
+    }
+}
+section.classe_secao1{
+    background-color: #ffffff;
+    padding:20px;
+    border:3px solid rgb(217, 255, 0);
+    text-align:left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top:40px;
+    padding-bottom:90px;
+}
+label{
+    font-family: Arial, sans-serif;
+    font-weight:bold;
+    font-size:25px;
+    color: #ffffff; /* Cor do texto branco */
+    -webkit-text-stroke: 1.5px yellow; /* Borda amarela ao redor das letras (para navegadores WebKit como Chrome e Safari) */
+    
+}
+/* Estilizando o input tipo botão */
+input#caixadeentrada{
+    background-color: transparent; /* Fundo transparente */
+    border: 3px solid #ff0; /* Borda amarela */
+    border-radius: 20px; /* Borda arredondada */
+    color: rgb(0, 0, 0); /* Cor do texto branca */
+    font-weight: bold;
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+    transition: box-shadow 0.3s ease-in-out; /* Efeito de transição */
+}
+
+/* Efeito neon */
+input#caixadeentrada:hover {
+    box-shadow: 0 0 20px black; /* Sombra neon amarela no hover */
+}
+/* Estilizando o botão redondo */
+button#botao {
+    margin-left: 20px;
+    border: 2px solid #ff0; /* Borda amarela */
+    border-radius: 50%; /* Borda arredondada para torná-lo uma bolinha */
+    width: 65px; /* Largura */
+    height: 65px; /* Altura (igual à largura para criar uma bolinha) */
+    background-color: transparent; /* Fundo transparente */
+    color: yellow; /* Cor do texto branca */
+    font-weight: bold;
+    cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+    transition: box-shadow 0.3s ease-in-out; /* Efeito de transição */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Efeito neon */
+button#botao:hover {
+    box-shadow: 0 0 20px black; /* Sombra neon amarela no hover */
+}
+hr#linha{
+    border-top: 2px solid #ff0; /* Linha amarela de 2 pixels de espessura */
+    width: 100%; /* Largura total do elemento pai */
+
+}
+textarea#campo_texto {
+    font-size:18px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    background-color: #ffffff; /* Cor de fundo personalizada */
+    border: 2px solid #eeff01; /* Borda personalizada */
+    padding: 10px; /* Espaçamento interno */
+}

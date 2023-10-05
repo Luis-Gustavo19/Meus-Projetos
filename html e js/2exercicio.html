@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Criaas</title>
+    <link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+    <h1 id="titulo">TABUADA</h1>
+    <section class="classe_secao1">
+        <label>DIGITE UM NÚMERO: </label>
+        <input id="caixadeentrada"type="number" placeholder="Escolha Um Número" min="1" >
+        <button id="botao" onclick="calcular()">APERTE AQUI</button><br>
+        <hr id="linha">
+        <textarea id="campo_texto" rows="10" cols="15" disabled readonly
+          placeholder="ESCOLHA UM NÚMERO E A TABUADA VAI APARECER AQUI"></textarea>
+        
+
+
+    </section>
+    <script>
+        function calcular(){
+            var input = Number(window.document.getElementById('caixadeentrada').value)
+            var textarea = window.document.getElementById('campo_texto')
+            var tabu = 1
+            textarea.value = ''
+            for (tabu; tabu<=10;tabu+=1){
+                var textoatual =`${input} x ${tabu} = ${input*tabu}         ` 
+                textarea.value+= textoatual}
+    
+    }
+    </script>
+    
+</body>
+</html>
