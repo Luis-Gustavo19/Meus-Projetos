@@ -2,8 +2,8 @@ from rembg import remove
 from PIL import Image
 import os
 
-pasta_entrada = "C:\DEV\mbientelivre\pasta1"
-pasta_saida = "C:\DEV\mbientelivre\pasta2"
+pasta_entrada = "add caminho"
+pasta_saida = "add caminho"
 
 # Renomear os arquivos da pasta de entrada
 num_arquivos = len(os.listdir(pasta_entrada))
