@@ -2,7 +2,6 @@
  e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci. Exemplo:
 0- 1 – 1 – 2 – 3 – 5 – 8
 '''
-#DIFÍCIL, mas conseguir fazer
 n = int(input('Quantos termos você quer mostrar:  '))
 cont = 0
 g = 0
